@@ -273,7 +273,7 @@ app.get('/logout', (req, res) => {
 app.get("*", errorRuteo);
 
 conectarDB(
-  "mongodb+srv://user_node_mongo_atlas:pwb6FOVscC8avtM6@cluster0.rz8rx.mongodb.net/coderhouse?authSource=admin&replicaSet=atlas-7mrzau-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",
+  "//cadena de conexion a mongoAtlas",
   (err) => {
     if (err) return console.log("error en conexión de base de datos", err);
     console.log("Base de datos conectada...");
